@@ -1,0 +1,88 @@
+.container {
+    display: block;
+}
+
+.titleInputBox {
+    width: 400px;
+    border-style: solid;
+    font-size: 15px;
+    font-weight: bold;
+    color: #cbd2e4;
+    background-color: #0c1a2f;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-color: #79e3c6;
+    box-shadow: 0px 0px 10px 10px rgba(127, 127, 127, 0.099);
+
+}
+
+.contentInputBox {
+    width: 450px;
+    height: 150px;
+    font-size: 20px;
+    color: #c7cdde;
+    background-color: #0c1a2f;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    border-color: #79e3c6;
+    box-shadow: 0px 0px 10px 10px rgba(127, 127, 127, 0.099);
+}
+
+
+.colorContainer {
+    width: 450px;
+    display: flex; 
+    justify-content: space-between; 
+    margin: 10px 2px 20px;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #0c1829;
+}
+
+.colorContainer:hover {
+    background-color: #040910;
+}
+
+.colorCircles {
+    /* border: 1px solid black; */
+    margin-right: 8px; 
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    transition: all 0.2s ease;
+}
+  
+.colorCircles:hover {
+    border-radius: 10%;
+
+    /* border: 1px solid white; */
+    /* box-shadow: 0px 0px 2px 2px white; */
+}
+
+
+/* Simple responsive  */
+@media (max-width: 600px) {
+    .titleInputBox {
+        width: 250px;
+    }
+    .contentInputBox {
+        width: 250px;
+    }
+    .colorContainer {
+        margin: 10px 2px 20px;
+        padding: 10px;
+        display: grid;
+        width: 300px;
+        grid-template-columns: repeat(7, 25px);
+        grid-template-rows: repeat(2, 25px);
+        grid-column-gap: 0px;
+        grid-row-gap: 15px;
+}
+    .colorCircles {
+        border: 1px solid black;
+        display: block;
+    }
+    
+}

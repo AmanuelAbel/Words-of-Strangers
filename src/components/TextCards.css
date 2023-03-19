@@ -1,0 +1,77 @@
+.card {
+    width: 250px;
+    height: auto;
+    margin: 10px 20px;
+    padding: 12px 10px;
+    border: 1px solid #61b59f;
+    border-radius: 10px;
+    background-color: #0c1d34;
+    text-align: left;
+    overflow: hidden;
+    display: block;
+    transition: all 0.14s cubic-bezier(0,1,1,.99);
+    justify-content: space-between;
+}
+
+.card:hover {
+    transform: scale(1.32);
+    background-color: #79e3c717;
+    backdrop-filter: blur(500px);
+}
+
+
+.title {
+    margin-bottom: 10px;
+    margin-left: 10px;
+    word-wrap: break-word;
+}
+
+.content {
+    padding: 5PX 10PX;
+    border-radius: 10px;
+    height: auto;
+    background-color: #0f223dc3;
+    text-transform: none;
+    font-style: normal;
+    word-wrap: break-word;
+}
+
+.clipboard {
+    color: white;
+    background-color: #0c1a2f;
+    border: 1px solid #61b59f;
+    opacity: 1;
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+.votesDiv {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+}
+
+.votes {
+    border: none;
+    background-color: #193761c3;
+    color: whitesmoke;
+    border-radius: 10px;
+    padding: 2px 10px 3px 12px;
+
+}
+
+.votes:hover {
+    background-color: #224a83;
+}
+
+/* Simple responsive  */
+@media (max-width: 600px) {
+    .card {
+        width: 290px;
+    }
+    .card:hover {
+        transform: scale(1.1);
+    }
+}
